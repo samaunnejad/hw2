@@ -34,20 +34,13 @@ std::set<std::string> parseStringToWords(string rawWords)
         wordToAdd = "";
         for(int i=0; i < word.size(); i++) 
         {
-<<<<<<< HEAD
+
             if(ispunct(word[i]) || word[i] == ' ')
             {
                if(wordToAdd.size() > 1)
                {
                  wordSet.insert(convToLower(wordToAdd));
                  wordToAdd = "";
-=======
-            if(ispunct(word[i]))
-            {
-               if(wordToAdd.size() > 1)
-               {
-                 wordSet.insert(wordToAdd);
->>>>>>> 051d493f486fe3682a802729d1a8283af4c4c474
                }
                else
                {
@@ -60,23 +53,15 @@ std::set<std::string> parseStringToWords(string rawWords)
                 wordToAdd+= word[i];
             }
 
-<<<<<<< HEAD
             
         }
         if(wordToAdd.size() > 1)
             {
                 wordSet.insert(convToLower(wordToAdd));
             }
-=======
-            if(wordToAdd.size() > 1)
-            {
-                wordSet.insert(wordToAdd);
-            }
         }
 
-
->>>>>>> 051d493f486fe3682a802729d1a8283af4c4c474
-    }
+    
 
     return wordSet;     
 }

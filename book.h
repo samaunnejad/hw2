@@ -16,13 +16,10 @@ public:
     /**
      * Allows for a more detailed search beyond simple keywords
      */
-<<<<<<< HEAD
+
     bool isMatch(std::vector<std::string>& searchTerms) const;
     std::set<std::string> keywords() const;
-=======
-     bool isMatch(std::vector<std::string>& searchTerms) const;
-     std::set<std::string> keywords() const;
->>>>>>> 051d493f486fe3682a802729d1a8283af4c4c474
+
     std::string displayString() const;
 
     /**
